@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Spotless Hungry Crocodile</title>
+    <title>Tasty Tales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
-
+    <!--Added JS for redirecting 404-->
+    <script>
+    function redirectTo404() {
+      window.location.href = "404.html";
+    }
+    </script>
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     </style>
@@ -22,8 +27,8 @@
         text-transform: none;
         letter-spacing: normal;
         line-height: 1.15;
-        color: var(--dl-color-theme-neutral-dark);
-        background-color: var(--dl-color-theme-neutral-light);
+        color: #b181db;
+        background-color: #2c2c34;
 
         fill: var(--dl-color-theme-neutral-dark);
       }
@@ -77,9 +82,9 @@
       <div class="home-container">
         <header class="navbar-container">
           <header data-thq="thq-navbar" class="navbar-navbar-interactive">
+           
+           <!--Need to add logo-->
             <img
-              alt="Recipes and Cookbook Logo"
-              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&amp;force_format=original"
               class="navbar-image1"
             />
             <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
@@ -88,22 +93,20 @@
                 <span class="thq-link thq-body-small">
                   <span>Recipes</span>
                 </span>
-                <span class="thq-link thq-body-small">
-                  <span>Cookbooks</span>
-                </span>
+               <!--Removed a span-->
                 <span class="thq-link thq-body-small"><span>About</span></span>
-                <span class="thq-link thq-body-small"><span>Link5</span></span>
+                <span class="thq-link thq-body-small"><span>Links</span></span>
               </nav>
               <div class="navbar-buttons">
                 <button
-                  class="navbar-action1 thq-button-animated thq-button-filled"
+                  class="navbar-action1 thq-button-animated thq-button-filled" onclick="redirectTo404()"
                 >
-                  <span class="thq-body-small">Action 1</span>
+                  <span class="thq-body-small">Login</span>
                 </button>
                 <button
-                  class="navbar-action2 thq-button-outline thq-button-animated"
+                  class="navbar-action2 thq-button-outline thq-button-animated" onclick="redirectTo404()"
                 >
-                  <span class="thq-body-small">Action 2</span>
+                  <span class="thq-body-small">Register</span>
                 </button>
               </div>
             </div>
@@ -136,9 +139,6 @@
                     <span>Recipes</span>
                   </span>
                   <span class="thq-link thq-body-small">
-                    <span>Cookbooks</span>
-                  </span>
-                  <span class="thq-link thq-body-small">
                     <span>About</span>
                   </span>
                   <span class="thq-link thq-body-small">
@@ -147,8 +147,8 @@
                 </nav>
               </div>
               <div class="navbar-buttons1">
-                <button class="thq-button-filled">Login</button>
-                <button class="thq-button-outline">Register</button>
+                <button class="thq-button-filled" onclick="redirectTo404()">Login</button>
+                <button class="thq-button-outline" onclick="redirectTo404()">Register</button>
               </div>
             </div>
           </header>
@@ -166,12 +166,12 @@
               </p>
             </div>
             <div class="hero-actions">
-              <button class="thq-button-filled hero-button">
-                <span class="thq-body-small"><span>Main action</span></span>
+              <button class="thq-button-filled hero-button" onclick="redirectTo404()">
+                <span class="thq-body-small"><span>Post Your Recipe!!</span></span>
               </button>
-              <button class="thq-button-outline hero-button1">
+              <button class="thq-button-outline hero-button1" onclick="redirectTo404()">
                 <span class="thq-body-small">
-                  <span>Secondary action</span>
+                  <span>See some recipes</span>
                 </span>
               </button>
             </div>
@@ -182,136 +182,138 @@
             >
               <div class="thq-animated-group-horizontal">
                 <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1650954934136-49a644cda481?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwNHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  alt="img1"
+                  src="src/img11.jpg"
                   class="hero-placeholder-image thq-img-scale thq-img-ratio-1-1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  src="src/img2.jpg"
                   class="hero-placeholder-image01 thq-img-scale thq-img-ratio-1-1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1499028203764-8669cfd05719?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  src="src/img7.jpg"
                   class="hero-placeholder-image02 thq-img-scale thq-img-ratio-1-1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1650954935872-d66bbef89989?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwM3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  src="src/img6.jpg"
                   class="hero-placeholder-image03 thq-img-scale thq-img-ratio-1-1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwM3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  src="src/img10.jpg"
                   class="hero-placeholder-image04 thq-img-scale thq-img-ratio-1-1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1521194263619-39ecc5b55c61?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  src="src/img5.jpg"
                   class="hero-placeholder-image05 thq-img-scale thq-img-ratio-1-1"
                 />
               </div>
               <div class="thq-animated-group-horizontal">
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1650954934136-49a644cda481?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwNHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  src="src/img3.jpg"
                   class="hero-placeholder-image06 thq-img-scale thq-img-ratio-1-1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  src="src/img12.jpg"
                   class="hero-placeholder-image07 thq-img-scale thq-img-ratio-1-1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1499028203764-8669cfd05719?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  src="src/img9.jpg"
                   class="hero-placeholder-image08 thq-img-scale thq-img-ratio-1-1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1650954935872-d66bbef89989?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwM3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  src="src/img4.jpg"
                   class="hero-placeholder-image09 thq-img-scale thq-img-ratio-1-1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwM3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  src="src/img8.jpg"
                   class="hero-placeholder-image10 thq-img-scale thq-img-ratio-1-1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1534312527009-56c7016453e6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIxfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  src="src/img1.jpg"
                   class="hero-placeholder-image11 thq-img-scale thq-img-ratio-1-1"
                 />
               </div>
             </div>
+
+            <!--Copied the above division for the reverse as well(same images but the top one is shuffled)-->
             <div
               class="hero-row-container1 thq-animated-group-container-horizontal thq-mask-image-horizontal"
             >
               <div class="thq-animated-group-horizontal-reverse">
                 <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1463797221720-6b07e6426c24?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image12 thq-img-scale thq-img-ratio-1-1"
-                />
-                <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1579187707643-35646d22b596?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwM3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image13 thq-img-scale thq-img-ratio-1-1"
-                />
-                <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image14 thq-img-scale thq-img-ratio-1-1"
-                />
-                <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1650954934136-49a644cda481?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwNHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image15 thq-img-scale thq-img-ratio-1-1"
-                />
-                <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image16 thq-img-scale thq-img-ratio-1-1"
-                />
-                <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1657783092568-23ea7dbb7847?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image17 thq-img-scale thq-img-ratio-1-1"
-                />
-              </div>
+                alt="Hero Image"
+                src="src/img7.jpg"
+                class="hero-placeholder-image06 thq-img-scale thq-img-ratio-1-1"
+              />
+              <img
+                alt="Hero Image"
+                src="src/img8.jpg"
+                class="hero-placeholder-image07 thq-img-scale thq-img-ratio-1-1"
+              />
+              <img
+                alt="Hero Image"
+                src="src/img9.jpg"
+                class="hero-placeholder-image08 thq-img-scale thq-img-ratio-1-1"
+              />
+              <img
+                alt="Hero Image"
+                src="src/img10.jpg"
+                class="hero-placeholder-image09 thq-img-scale thq-img-ratio-1-1"
+              />
+              <img
+                alt="Hero Image"
+                src="src/img11.jpg"
+                class="hero-placeholder-image10 thq-img-scale thq-img-ratio-1-1"
+              />
+              <img
+                alt="Hero Image"
+                src="src/img12.jpg"
+                class="hero-placeholder-image11 thq-img-scale thq-img-ratio-1-1"
+              />
+            </div>  
               <div class="thq-animated-group-horizontal-reverse">
                 <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1463797221720-6b07e6426c24?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image18 thq-img-scale thq-img-ratio-1-1"
-                />
-                <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1579187707643-35646d22b596?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwM3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image19 thq-img-scale thq-img-ratio-1-1"
-                />
-                <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image20 thq-img-scale thq-img-ratio-1-1"
-                />
-                <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1650954934136-49a644cda481?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwNHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image21 thq-img-scale thq-img-ratio-1-1"
-                />
-                <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                  class="hero-placeholder-image22 thq-img-scale thq-img-ratio-1-1"
-                />
-                <img
-                  alt="Hero Image"
-                  src="https://images.unsplash.com/photo-1568214379698-8aeb8c6c6ac8?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEyfHxncmFmaWN8ZW58MHx8fHwxNzE1Nzk0OTk5fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
-                  class="hero-placeholder-image23 thq-img-scale thq-img-ratio-1-1"
-                />
-              </div>
+                alt="Hero Image"
+                src="src/img1.jpg"
+                class="hero-placeholder-image06 thq-img-scale thq-img-ratio-1-1"
+              />
+              <img
+                alt="Hero Image"
+                src="src/img2.jpg"
+                class="hero-placeholder-image07 thq-img-scale thq-img-ratio-1-1"
+              />
+              <img
+                alt="Hero Image"
+                src="src/img3.jpg"
+                class="hero-placeholder-image08 thq-img-scale thq-img-ratio-1-1"
+              />
+              <img
+                alt="Hero Image"
+                src="src/img4.jpg"
+                class="hero-placeholder-image09 thq-img-scale thq-img-ratio-1-1"
+              />
+              <img
+                alt="Hero Image"
+                src="src/img5.jpg"
+                class="hero-placeholder-image10 thq-img-scale thq-img-ratio-1-1"
+              />
+              <img
+                alt="Hero Image"
+                src="src/img6.jpg"
+                class="hero-placeholder-image11 thq-img-scale thq-img-ratio-1-1"
+              />     
+            </div>
             </div>
           </div>
           <div>
@@ -338,7 +340,7 @@
             </div>
           </div>
         </div>
-        <div class="thq-section-padding">
+        <!--<div class="thq-section-padding">
           <div class="features1-container1 thq-section-max-width">
             <div class="features1-image-container">
               <img
@@ -355,7 +357,7 @@
                 alt="Organized recipe cards"
                 src="https://images.unsplash.com/photo-1650954935872-d66bbef89989?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
                 class="features1-image2 thq-img-ratio-16-9"
-              />
+              />-->
             </div>
             <div class="features1-tabs-menu">
               <div class="features1-tab-horizontal">
@@ -474,7 +476,7 @@
                 </div>
               </div>
             </div>
-            <div class="features2-image-container">
+            <!--<div class="features2-image-container">
               <img
                 alt="User-Friendly Interface Image Alt Text"
                 src="https://images.unsplash.com/photo-1636601095696-0d5978d8af1b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
@@ -490,10 +492,10 @@
                 src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
                 class="features2-image2 thq-img-ratio-16-9"
               />
-            </div>
+            </div>-->
           </div>
         </div>
-        <div class="pricing-pricing23 thq-section-padding">
+        <!--<div class="pricing-pricing23 thq-section-padding">
           <div class="pricing-max-width thq-section-max-width">
             <div class="pricing-section-title">
               <span class="pricing-text thq-body-small">
@@ -903,25 +905,22 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
         <div class="steps-container thq-section-padding">
           <div class="steps-max-width thq-section-max-width">
             <div class="steps-container1 thq-grid-2">
               <div class="steps-section-header">
                 <h2 class="thq-heading-2">
-                  Discover the Power of Our Products
+                  Explore the power of Cooking recipes
                 </h2>
                 <p class="thq-body-large">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique. Duis
-                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                  commodo diam libero vitae erat.
+                  "Discover the joy and creativity of cooking by exploring the power of recipes! Whether you're a seasoned chef or just starting out, recipes are your guide to crafting delicious meals, experimenting with new flavors, and mastering culinary techniques. Let each recipe be a new adventure, bringing you closer to perfecting your favorite dishes or trying something entirely fresh and exciting. Step into the kitchen, follow the steps, and watch magic happen!"
                 </p>
                 <div class="steps-actions">
                   <button
                     class="thq-button-animated thq-button-filled steps-button"
                   >
-                    <span class="thq-body-small">Main action</span>
+                    <span class="thq-body-small" onclick="redirectTo404()">Post Yours Right Now!!</span>
                   </button>
                 </div>
               </div>
@@ -969,14 +968,15 @@
             </div>
           </div>
         </div>
+
+        <!--Changed the entire testimonal prop into a author prop-->
         <div class="thq-section-padding">
           <div class="testimonial-max-width thq-section-max-width">
             <div class="testimonial-container">
-              <h2 class="thq-heading-2"><span>Testimonials</span></h2>
+              <h2 class="thq-heading-2"><span>Authors</span></h2>
               <span class="testimonial-text01 thq-body-small">
                 <span>
-                  I absolutely love the recipes on this site! They are easy to
-                  follow and always turn out delicious.
+                  Meet the developers who brought this project to life!
                 </span>
               </span>
             </div>
@@ -985,23 +985,15 @@
                 <div class="thq-animated-card-bg-1">
                   <div data-animated="true" class="thq-card testimonial-card">
                     <div class="testimonial-container02">
-                      <img
-                        alt="Image of Samantha Smith"
-                        src="https://images.unsplash.com/photo-1565970141926-c001afaf8577?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="testimonial-image"
-                      />
                       <div class="testimonial-container03">
                         <strong class="thq-body-large">
-                          <span>Samantha Smith</span>
+                          <span>Swaroop S Rao</span>
                         </strong>
                         <span class="thq-body-small">
-                          <span>Food Blogger</span>
+                          <span>Computer Science and Engineering Batch 23-27</span>
                         </span>
                       </div>
                     </div>
-                    <span class="testimonial-text04 thq-body-small">
-                      <span>5 stars</span>
-                    </span>
                   </div>
                 </div>
               </div>
@@ -1009,21 +1001,15 @@
                 <div class="thq-animated-card-bg-1">
                   <div data-animated="true" class="thq-card testimonial-card1">
                     <div class="testimonial-container04">
-                      <img
-                        alt="Image of John Doe"
-                        src="https://images.unsplash.com/photo-1612469294274-b1baaf5125ca?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="testimonial-image1"
-                      />
                       <div class="testimonial-container05">
                         <strong class="thq-body-large">
-                          <span>John Doe</span>
+                          <span>Varshan A V K</span>
                         </strong>
-                        <span class="thq-body-small"><span>Chef</span></span>
+                        <span class="thq-body-small">
+                          <span>Information Technology Batch 23-27</span>
+                        </span>
                       </div>
                     </div>
-                    <span class="testimonial-text07 thq-body-small">
-                      <span>5 stars</span>
-                    </span>
                   </div>
                 </div>
               </div>
@@ -1031,135 +1017,24 @@
                 <div class="thq-animated-card-bg-1">
                   <div data-animated="true" class="thq-card testimonial-card2">
                     <div class="testimonial-container06">
-                      <img
-                        alt="Image of Emily Johnson"
-                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="testimonial-image2"
-                      />
                       <div class="testimonial-container07">
                         <strong class="thq-body-large">
-                          <span>Emily Johnson</span>
+                          <span>Sethupathy R</span>
                         </strong>
                         <span class="thq-body-small">
-                          <span>Home Cook</span>
+                          <span>Information Technology Batch 23-27</span>
                         </span>
                       </div>
                     </div>
-                    <span class="testimonial-text10 thq-body-small">
-                      <span>5 stars</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="thq-animated-card-bg-2">
-                <div class="thq-animated-card-bg-1">
-                  <div data-animated="true" class="thq-card testimonial-card3">
-                    <div class="testimonial-container08">
-                      <img
-                        alt="image"
-                        src="https://images.unsplash.com/photo-1619319999528-65275b1356da?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTk4ODIwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="testimonial-image3"
-                      />
-                      <div class="testimonial-container09">
-                        <strong class="thq-body-large">
-                          <span>Author Name</span>
-                        </strong>
-                        <span class="thq-body-small">
-                          <span>Position, Company name</span>
-                        </span>
-                      </div>
-                    </div>
-                    <span class="testimonial-text13 thq-body-small">
-                      <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse varius enim in eros elementum tristique.
-                        Duis cursus, mi quis viverra ornare, eros dolor interdum
-                        nulla.
-                      </span>
-                    </span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="contact-contact20 thq-section-padding">
-          <div class="contact-max-width thq-section-max-width">
-            <div class="contact-section-title">
-              <span class="thq-body-small">
-                <span>We'd love to hear from you!</span>
-              </span>
-              <div class="contact-content">
-                <h2 class="thq-heading-2"><span>Contact Us</span></h2>
-                <p class="contact-text2 thq-body-large">
-                  <span>Have a question or feedback? Reach out to us!</span>
-                </p>
-              </div>
-            </div>
-            <div class="contact-row">
-              <div class="contact-content1">
-                <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
-                  <path
-                    d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
-                  ></path>
-                </svg>
-                <div class="contact-contact-info">
-                  <div class="contact-content2">
-                    <h3 class="contact-text3 thq-heading-3">Email</h3>
-                    <p class="contact-text4 thq-body-large">
-                      <span>
-                        Follow us on social media for more recipes and updates.
-                      </span>
-                    </p>
-                  </div>
-                  <span class="contact-email thq-body-small">
-                    <span>info@recipesandcookbook.com</span>
-                  </span>
-                </div>
-              </div>
-              <div class="contact-content3">
-                <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
-                  <path
-                    d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
-                  ></path>
-                </svg>
-                <div class="contact-contact-info1">
-                  <div class="contact-content4">
-                    <h3 class="contact-text5 thq-heading-3">Phone</h3>
-                    <p class="contact-text6 thq-body-large">
-                      <span>Connect with us:</span>
-                    </p>
-                  </div>
-                  <span class="contact-phone thq-body-small">
-                    <span>+1-123-456-7890</span>
-                  </span>
-                </div>
-              </div>
-              <div class="contact-content5">
-                <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
-                  <path
-                    d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
-                  ></path>
-                </svg>
-                <div class="contact-contact-info2">
-                  <div class="contact-content6">
-                    <h3 class="contact-text7 thq-heading-3">Office</h3>
-                    <p class="contact-text8 thq-body-large">
-                      <span>
-                        Stay updated with our latest recipes and cooking tips!
-                      </span>
-                    </p>
-                  </div>
-                  <span class="contact-address thq-body-small">
-                    <span>123 Main Street, City, Country</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer class="footer-footer1 thq-section-padding">
-          <div class="footer-max-width thq-section-max-width">
+        
+        
+         <!-- <div class="footer-max-width thq-section-max-width">
             <div class="footer-content">
               <div class="footer-newsletter">
                 <img
@@ -1183,12 +1058,13 @@
                     <button class="thq-button-outline footer-button">
                       <span class="thq-body-small"><span>Subscribe</span></span>
                     </button>
-                  </div>
+                  </div>-
                   <span class="footer-content2 thq-body-small">
                     <span>© 2023 Your Cookbook. All Rights Reserved.</span>
                   </span>
                 </div>
-              </div>
+              </div>-->
+              <foot class="footer-footer1 thq-section-padding">
               <div class="footer-links">
                 <div class="footer-column1">
                   <strong class="thq-body-large footer-column1-title">
@@ -1245,7 +1121,7 @@
                       </svg>
                       <span class="thq-body-small">Instagram</span>
                     </div>
-                    <div class="footer-link2">
+                   <!-- <div class="footer-link2">
                       <svg
                         viewBox="0 0 950.8571428571428 1024"
                         class="thq-icon-small"
@@ -1255,7 +1131,7 @@
                         ></path>
                       </svg>
                       <span class="thq-body-small">X</span>
-                    </div>
+                    </div>-->
                     <div class="footer-link3">
                       <svg
                         viewBox="0 0 877.7142857142857 1024"
@@ -1267,14 +1143,14 @@
                       </svg>
                       <span class="thq-body-small">LinkedIn</span>
                     </div>
-                    <div class="footer-link4">
+                  <!--  <div class="footer-link4">
                       <svg viewBox="0 0 1024 1024" class="thq-icon-small">
                         <path
                           d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"
                         ></path>
                       </svg>
                       <span class="thq-body-small">Youtube</span>
-                    </div>
+                    </div>-->
                   </div>
                 </div>
               </div>
@@ -1283,7 +1159,7 @@
               <div class="thq-divider-horizontal"></div>
               <div class="footer-row">
                 <span class="thq-body-small">
-                  <span>Designed with love by Your Design Studio</span>
+                  <span>Designed with love by Web Wizards</span>
                 </span>
                 <div class="footer-footer-links2">
                   <span class="thq-body-small">
