@@ -3,7 +3,7 @@
   display: flex;
   position: relative;
   justify-content: center;
-  background-color: var(--dl-color-theme-neutral-light);
+  background-color: #2c2c29;
 }
 .navbar-navbar-interactive {
   width: 100%;
@@ -481,6 +481,7 @@
 }
 .cta-content {
   gap: var(--dl-space-space-oneandhalfunits);
+  color: #2c2c29;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -654,7 +655,7 @@
   }
 }
 
-.pricing-pricing23 {
+/*.pricing-pricing23 {
   width: 100%;
   height: auto;
   display: flex;
@@ -1228,7 +1229,7 @@
   .pricing-max-width {
     gap: var(--dl-space-space-oneandhalfunits);
   }
-}
+}*/
 
 .steps-container {
   width: 100%;
@@ -1270,6 +1271,7 @@
   transform: rotate(-2deg);
   margin-bottom: var(--dl-space-space-twounits);
   background-color: var(--dl-color-theme-accent1);
+  color: #2c2c29;
 }
 .steps-text04 {
   text-align: center;
@@ -1306,6 +1308,7 @@
   transform: rotate(-2deg);
   margin-bottom: var(--dl-space-space-twounits);
   background-color: var(--dl-color-theme-accent1);
+  color: #2c2c29;
 }
 .steps-text10 {
   text-align: center;
@@ -1391,6 +1394,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  color: #2c2c29;
 }
 .testimonial-image {
   width: var(--dl-size-size-small);
@@ -1403,6 +1407,7 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  color: #2c2c29;
 }
 .testimonial-text04 {
   text-align: left;
@@ -1414,6 +1419,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  color: #2c2c29;
 }
 .testimonial-image1 {
   width: var(--dl-size-size-small);
@@ -1426,6 +1432,7 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  color: #2c2c29;
 }
 .testimonial-text07 {
   text-align: left;
@@ -1437,6 +1444,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  color: #2c2c29;
 }
 .testimonial-image2 {
   width: var(--dl-size-size-small);
@@ -1449,6 +1457,7 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  color: #2c2c29;
 }
 .testimonial-text10 {
   text-align: left;
